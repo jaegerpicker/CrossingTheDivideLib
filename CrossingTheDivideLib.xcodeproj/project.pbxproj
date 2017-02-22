@@ -13,6 +13,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F481D9281E5BE1E20029D71E /* CrossingTheDivideLibiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrossingTheDivideLibiOS.h; sourceTree = "<group>"; };
+		F481D9291E5BE1E20029D71E /* CrossingTheDivideLibiOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrossingTheDivideLibiOS.m; sourceTree = "<group>"; };
 		F49C67B61E4046A600C4C59F /* libCrossingTheDivideLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCrossingTheDivideLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F49C67B91E4046A600C4C59F /* CrossingTheDivideLib.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CrossingTheDivideLib.hpp; sourceTree = "<group>"; };
 		F49C67BB1E4046A600C4C59F /* CrossingTheDivideLibPriv.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CrossingTheDivideLibPriv.hpp; sourceTree = "<group>"; };
@@ -30,10 +32,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F481D9271E5BE1E20029D71E /* CrossingTheDivideLibiOS */ = {
+			isa = PBXGroup;
+			children = (
+				F481D9281E5BE1E20029D71E /* CrossingTheDivideLibiOS.h */,
+				F481D9291E5BE1E20029D71E /* CrossingTheDivideLibiOS.m */,
+			);
+			path = CrossingTheDivideLibiOS;
+			sourceTree = "<group>";
+		};
 		F49C67AD1E4046A600C4C59F = {
 			isa = PBXGroup;
 			children = (
 				F49C67B81E4046A600C4C59F /* CrossingTheDivideLib */,
+				F481D9271E5BE1E20029D71E /* CrossingTheDivideLibiOS */,
 				F49C67B71E4046A600C4C59F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -228,6 +240,7 @@
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_ENABLE_CPP_RTTI = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -239,6 +252,7 @@
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_ENABLE_CPP_RTTI = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -261,6 +275,7 @@
 				F49C67C31E4046A600C4C59F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

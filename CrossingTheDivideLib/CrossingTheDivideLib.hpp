@@ -12,11 +12,13 @@
 
 /* The classes below are exported */
 #pragma GCC visibility push(default)
+#include "string"
 
 class CrossingTheDivideLib
 {
     public:
-    void HelloWorld(const char *);
+	std::string HelloWorld(const std::string &);
+	void quickSort(int unsorted[], int low, int right);
 };
 
 #pragma GCC visibility pop

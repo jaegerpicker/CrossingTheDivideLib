@@ -11,15 +11,43 @@
 #include "CrossingTheDivideLib.hpp"
 #include "CrossingTheDivideLibPriv.hpp"
 
-void CrossingTheDivideLib::HelloWorld(const char * s)
+std::string CrossingTheDivideLib::HelloWorld(const std::string & s)
 {
     CrossingTheDivideLibPriv *theObj = new CrossingTheDivideLibPriv;
-    theObj->HelloWorldPriv(s);
+	std::string ret = theObj->HelloWorldPriv(s);
     delete theObj;
+	return ret;
 };
 
-void CrossingTheDivideLibPriv::HelloWorldPriv(const char * s) 
+void CrossingTheDivideLib::quickSort(int* arr, int left, int right) {
+	int i = left, j = right;
+	int tmp;
+	int pivot = arr[(left + right) / 2];
+
+	/* partition */
+	while (i <= j) {
+		while (arr[i] < pivot)
+			i++;
+		while (arr[j] > pivot)
+			j--;
+		if (i <= j) {
+			tmp = arr[i];
+			arr[i] = arr[j];
+			arr[j] = tmp;
+			i++;
+			j--;
+		}
+	};
+
+	/* recursion */
+	if (left < j)
+		quickSort(arr, left, j);
+	if (i < right)
+		quickSort(arr, i, right);
+};
+
+std::string CrossingTheDivideLibPriv::HelloWorldPriv(const std::string & s)
 {
-    std::cout << s << std::endl;
+	return s;
 };
 

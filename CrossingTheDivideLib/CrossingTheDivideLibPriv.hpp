@@ -13,7 +13,7 @@
 class CrossingTheDivideLibPriv
 {
     public:
-    void HelloWorldPriv(const char *);
+	std::string HelloWorldPriv(const std::string &);
 };
 
 #pragma GCC visibility pop
